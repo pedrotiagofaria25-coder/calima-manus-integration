@@ -1,0 +1,36 @@
+{
+  "name": "calima-manus-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP para integração entre Calima ERP e Manus",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "calima",
+    "erp",
+    "contabilidade",
+    "manus"
+  ],
+  "author": "Manus Integration",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^12.4.1",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "inquirer": "^12.10.0",
+    "ora": "^9.0.0",
+    "playwright": "^1.48.2",
+    "xml2js": "^0.6.2"
+  }
+}

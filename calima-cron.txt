@@ -1,0 +1,19 @@
+# ========================================
+# Automações Calima-Manus
+# Instalado em: 2025-11-04
+# ========================================
+
+# Extração Diária de Provisões - 2h da manhã
+0 2 * * * cd /home/ubuntu/calima-manus-mcp && /usr/bin/node automacoes.js provisoes >> /home/ubuntu/calima-manus-mcp/logs/provisoes.log 2>&1
+
+# Relatório Semanal de Processos - Segunda-feira 4h
+0 4 * * 1 cd /home/ubuntu/calima-manus-mcp && /usr/bin/node automacoes.js processos >> /home/ubuntu/calima-manus-mcp/logs/processos.log 2>&1
+
+# Monitoramento de Notificações - A cada hora
+0 * * * * cd /home/ubuntu/calima-manus-mcp && /usr/bin/node automacoes.js notificacoes >> /home/ubuntu/calima-manus-mcp/logs/notificacoes.log 2>&1
+
+# Backup Completo de Dados - Domingo 5h
+0 5 * * 0 cd /home/ubuntu/calima-manus-mcp && /usr/bin/node automacoes.js backup >> /home/ubuntu/calima-manus-mcp/logs/backup.log 2>&1
+
+# Limpeza de Logs Antigos - 1º dia do mês às 3h
+0 3 1 * * find /home/ubuntu/calima-manus-mcp/logs -name '*.log' -mtime +30 -delete

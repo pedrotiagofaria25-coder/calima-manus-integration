@@ -1,0 +1,17 @@
+# Dependências Python para integração alternativa com Calima
+
+# Automação web
+playwright==1.48.0
+
+# Processamento de dados
+pandas==2.2.3
+openpyxl==3.1.5
+
+# Manipulação de CSV
+csv23==0.3.4
+
+# Variáveis de ambiente
+python-dotenv==1.0.1
+
+# Utilitários
+requests==2.32.3

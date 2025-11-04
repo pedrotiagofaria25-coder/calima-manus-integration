@@ -1,0 +1,97 @@
+{
+  "urls": [
+    {
+      "context": "Após login",
+      "url": "https://www.calima.app/"
+    },
+    {
+      "context": "Seção /empresa",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /empresas",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /dashboard",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /home",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /principal",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /contabil",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    },
+    {
+      "context": "Seção /fiscal",
+      "url": "https://stable.calima.app/mfp/dashboard"
+    }
+  ],
+  "menuItems": [],
+  "empresas": [
+    {
+      "selector": "[class*=\"empresa\"]",
+      "count": 1,
+      "sample": [
+        {
+          "html": "<span class=\"label-empresa-mobile-mfp app-header--shadow\"><button type=\"button\" id=\"companySelectorPopover\" data-testid=\"companySelectorPopover\" class=\"btn btn-link\"><div class=\"d-flex align-items-cen",
+          "text": "1 - LFG CONSULTORIA IMOBILIARIA LTDAReferência Atual: 06/2023Ref.: 06/2023"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "/home/ubuntu/calima-manus-mcp/calima-main-page.png",
+    "/home/ubuntu/calima-manus-mcp/calima-empresa.png",
+    "/home/ubuntu/calima-manus-mcp/calima-empresas.png",
+    "/home/ubuntu/calima-manus-mcp/calima-dashboard.png",
+    "/home/ubuntu/calima-manus-mcp/calima-home.png",
+    "/home/ubuntu/calima-manus-mcp/calima-principal.png",
+    "/home/ubuntu/calima-manus-mcp/calima-contabil.png",
+    "/home/ubuntu/calima-manus-mcp/calima-fiscal.png"
+  ],
+  "pageStructure": [
+    {
+      "tag": "NOSCRIPT",
+      "id": "",
+      "class": "",
+      "children": 0
+    },
+    {
+      "tag": "DIV",
+      "id": "root",
+      "class": "",
+      "children": 2
+    },
+    {
+      "tag": "SCRIPT",
+      "id": "",
+      "class": "",
+      "children": 0
+    },
+    {
+      "tag": "SCRIPT",
+      "id": "",
+      "class": "",
+      "children": 0
+    },
+    {
+      "tag": "SCRIPT",
+      "id": "",
+      "class": "",
+      "children": 0
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "",
+      "children": 5
+    }
+  ]
+}

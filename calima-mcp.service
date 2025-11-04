@@ -1,0 +1,21 @@
+[Unit]
+Description=Calima MCP HTTP Server
+After=network.target
+
+[Service]
+Type=exec
+User=ubuntu
+WorkingDirectory=/home/ubuntu/calima-manus-mcp
+ExecStart=/home/ubuntu/.nvm/versions/node/v22.13.0/bin/node /home/ubuntu/calima-manus-mcp/server-http.cjs
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=calima-mcp
+
+# Variáveis de ambiente
+Environment="NODE_ENV=production"
+Environment="PORT=3000"
+
+[Install]
+WantedBy=multi-user.target
