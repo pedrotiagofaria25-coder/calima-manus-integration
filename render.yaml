@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: calima-integration
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx playwright install chromium
+    startCommand: node server-http.cjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: CALIMA_USERNAME
+        sync: false
+      - key: CALIMA_PASSWORD
+        sync: false

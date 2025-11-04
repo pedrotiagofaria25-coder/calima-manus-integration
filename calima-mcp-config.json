@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "calima-integration": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-example"],
+      "url": "https://3000-i4cv06ux28mee0d3j8942-baae7cd3.manusvm.computer/mcp"
+    }
+  }
+}
