@@ -27,7 +27,30 @@ const crypto = new CryptoManager();
 let payroll, esocial, tax, declarations, nfeImporter;
 
 // Endpoint de saúde
-app.get('/health', (req, res) => {
+app.get("/mcp", (req, res) => {
+  res.json({
+    name: "Calima Integration",
+    description: "Servidor de integração com o sistema Calima ERP, versão 5.0.",
+    tools: [
+      "calima_calcular_folha",
+      "calima_gerar_gps",
+      "calima_gerar_prolabore",
+      "calima_gerar_evento_esocial",
+      "calima_enviar_esocial",
+      "calima_processar_esocial_mensal",
+      "calima_apurar_pis",
+      "calima_apurar_cofins",
+      "calima_apurar_tributos_mensais",
+      "calima_apurar_tributos_trimestrais",
+      "calima_gerar_dctf",
+      "calima_processar_dctfweb",
+      "calima_importar_nfe",
+      "calima_validar_nfe"
+    ]
+  });
+});
+
+app.get("/health", (req, res) => {
     res.json({ status: 'ok', service: 'Calima MCP Server', version: '5.0.0' });
 });
 
